@@ -363,4 +363,8 @@ MigrationBackup/
 FodyWeavers.xsd
 
 
+# .gitignore
+appsettings.json
+
+
 .vscode
