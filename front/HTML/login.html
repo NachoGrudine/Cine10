@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">   
+   <link rel="stylesheet" href="../CSS/resources.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+
+    <header>    
+        <nav class="navbar">
+            <h1 class="logo">Cine 10</h1>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="indexLandingpage.html">Inicio</a></li>
+                <li><a class="nav-link" href="Nosotros.Html">Nosotros</a></li>
+                <li><a class="nav-link" href="#PaginaPrincipal" onclick="mostrarLogin()">Pagina Principal</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div id="particles-js"></div>
+    
+        <div class="container-log">
+            <div class="formulario">
+                <form action="forms">
+                    <p>Usuario</p>
+                    <input type="text" name="INusua" id="INusuario" placeholder="Usuario">
+                    <p>Contraseña</p>
+                    <input type="password" name="INcontra" id="INcontraseña" placeholder="Contraseña">
+                    <br>
+                    <button type="button" name="BUenviar" id="BUenviar" class="funcion-acciones"
+                        onclick="login()">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="contenedor-maestro" id="contenedor_maestro"></div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="modalMensaje" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMensajeLabel">Aviso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalMensajeCuerpo">Un mensaje por defecto.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <p>Tu cine en Córdoba, Argentina</p>
+                </div>
+          
+                <div class="footer-social">
+                     <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i> Facebook</i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i> Instagram</i></a>
+                     <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i> Twitter</i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cine 10. Todos los derechos reservados.</p>
+            </div>
+          </footer>
+    <script src="../JS/particles.min.js"></script>
+    <script src="../JS/loginScrip.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+/* Estilo global */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Sección 1: Quiénes Somos */
+#quienes-somos {
+  background-color: rgb(0, 0, 0);
+}
+
+.hquienes {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.descripcion {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #20232D;
+}
+#quienes-somos img {
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+#quienes-somos p{
+  color: white;
+}
+/* Sección 2: Nuestras Salas */
+#nuestras-salas {
+  background-color: #0d0e15;
+  color: #ffffff;
+}
+
+#nuestras-salas h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+#nuestras-salas .row {
+  display: flex;
+  justify-content: center;
+}
+
+#nuestras-salas .col-md-6 {
+  padding: 20px;
+}
+
+#nuestras-salas .row h4 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+#nuestras-salas p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+#nuestras-salas img {
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Sección 3: Promociones */
+#promociones {
+  background-color: rgb(0, 0, 0);
+  padding-top: 80px;
+ 
+}
+
+#promociones .col-md-6 {
+  margin-top: 30px;
+}
+
+#promociones h2 {
+  font-size: 2.5rem;
+  color: #212529;
+  margin-bottom: 30px;
+}
+
+#promociones img {
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#promociones .text-center h3 {
+  font-size: 1.8rem;
+  color: #212529;
+}
+
+#promociones .col-md-6 .text-center {
+  padding: 15px;
+}
+
+#promociones .col-md-6 img {
+  max-width: 100%;
+}
+
+/* Imagen de las promociones pequeñas */
+#promociones .col-md-6.d-flex {
+  justify-content: space-between;
+}
+
+#promociones .col-md-6.d-flex .text-center {
+  width: 100%;
+}
+
+#promociones .col-md-6.d-flex img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#promociones .col-md-6.d-flex h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+#promociones .col-md-6.d-flex p {
+  font-size: 1rem;
+  color: #495057;
+}
+
+.footer {
+  background-color: #0d0e15;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.footer-content {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.footer-social {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-social a:hover {
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #promociones .col-md-6.d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #promociones .col-md-6.d-flex .text-center {
+    margin-bottom: 20px;
+  }
+
+  #promociones img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#promociones h5{
+  color: white;
+}
+#promociones h2{
+  color: white;
+}
+.pe
+{
+  color: white;
+}
+
+
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: #0d0e15;
+}
+
+.navbar {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  width: 100%; 
+  max-width: 1000px; 
+  height: 5rem; 
+}
+
+.navbar .logo {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 0; 
+}
+
+.nav-links {
+  font-family: "Roboto";
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: center; 
+}
+
+.nav-links li {
+  font-size: 16px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+#particles-js {
+  position: fixed; 
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+
+@keyframes pulsate {
+  0%, 100% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+
+img {
+  animation: pulsate 3s ease-in-out infinite; 
+  transition: box-shadow 0.3s ease; 
+}
+
+
+img:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
