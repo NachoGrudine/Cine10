@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="../CSS/stylesPeliculas.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/resources.css">
+        
+        <title>Cine10</title>
+    </head>
+<body >
+    
+    <header>    
+        <nav class="navbar">
+            <h1 class="logo">Cine 10</h1>
+            <ul class="nav-links">
+                <li><a href="#inicio" onclick="mostrarPrincipal()">Inicio</a></li>
+                <li><a  href="#inicio" onclick="mostrarContenedor();">Funciones</a></li>
+                <li><a  href="#inicio" onclick="cargarPeliculas();">Películas</a></li>
+                <li><a  href="#inicio" onclick="mostrarCarteleras();">Carteleras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="particles-js"></div>
+
+
+    <div class="contenedor" id="contenedor">
+            <div class="w3-container">
+                <div id="formularioEdicion"></div>
+                <div id="formularioVerPelicula"></div>
+                
+                <div id="peliculasContainer" class="w3-row-padding">
+                <div id="movie-cards-container"></div>
+                </div>
+            </div>
+
+        <div class="contenedor-maestro" id="contenedor_maestro"></div>
+    </div>
+    <div class="modal" tabindex="-1" id="errorModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aviso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="errorMessage">Un error ocurrió.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMensaje" tabindex="-1" aria-labelledby="modalMensajeLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMensajeLabel"></h5> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalMensajeCuerpo">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modalBorrar">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmar eliminación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="mensajeModalBorrar">¿Estás seguro de que deseas borrar esta película?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnConfirmarBorrar" data-id="">Aceptar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <p>Tu cine en Córdoba, Argentina</p>
+            </div>
+      
+            <div class="footer-social">
+                 <a href="#" aria-label="Facebook"><i class="bi bi-facebook"> Facebook</i></a>
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"> Instagram</i></a>
+                 <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"> Twitter</i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cine 10. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/js/multi-select-tag.js"></script>
+
+    <script src="../JS/particles.min.js"></script>
+    <script src="../JS/conexionAPiPeliculas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../JS/principalScript.js"></script>
+</body>
+
+
+
+

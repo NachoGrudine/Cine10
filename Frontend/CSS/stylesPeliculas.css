@@ -1,0 +1,228 @@
+.w3-card-4.movie-card-content .movie-info {
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+}
+
+.w3-card-4.movie-card-content {
+    background-color: #20232D !important; 
+    position: relative;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadido box-shadow */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Efecto de hover sutil para la tarjeta */
+.movie-card:hover {
+    
+    box-shadow: 0 4px 10px #0d0e15; /* Sombra sutil */
+    opacity: 0.95; /* Ligera disminución de opacidad */
+}
+
+/* Imagen de la película */
+.w3-card-4.movie-card-content .movie-img {
+    width: 50%;
+    height: 50%;
+    margin-top: 20px;
+    transition: transform 0.3s ease; /* Suaviza el efecto de transición */
+}
+
+/* Título de la tarjeta */
+.movie-header h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: auto;
+    margin-top: 20px;
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+/* Cuerpo de la tarjeta y sinopsis */
+.movie-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 100px;
+}
+
+/* Sinopsis */
+.movie-body p {
+    text-align: center;
+    margin: 0;
+}
+
+/* Contenedor para el director */
+.movie-footer {
+    font-weight: bold;
+    background-color: #ffffff;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+
+/* Efecto hover para la tarjeta */
+.movie-card:hover .card-buttons {
+    display: flex;
+}
+
+/* Estilos para los botones de edición y borrado */
+.card-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+
+/* Estilo para los iconos */
+.btn-icon {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-icon:hover {
+    background-color: gray;
+}
+
+.btn-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+/*Post-----------------------------------------------------------------------------------------------------
+/* Contenedor principal de la tarjeta */
+.w3-card-4.movie-card-content {
+    background-color: rgba(222, 224, 231, 0.797) ; /* Color de fondo semitransparente */
+    border-radius: 10px;
+    transition: transform 0.3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Formulario de agregar película */
+.formulario-pelicula {
+    max-width: 500px; /* Ajustar el ancho máximo */
+    margin: 0 auto; /* Centrar el formulario */
+    padding: 20px; /* Espaciado interno */
+    background-color: rgba(218, 216, 216, 0.747); /* Fondo blanco para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del formulario */
+}
+
+/* Agrega este CSS en tu archivo stylesPeliculas.css */
+.tituloConBotones {
+    display: flex;
+    
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+.tituloConBotones h2 {
+    margin: 10px; /* Elimina márgenes del título */
+}
+.titulo-principal-peli {
+    font-size: 50px; /* Tamaño grande */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrado */
+    color: #ffffff;
+}
+
+.tituloConBotones .botonesdescAsc {
+    display: flex;
+    gap: 10px; /* Agrega espacio entre los botones */
+    margin-left: 25%;
+}
+
+
+
+
+.but-crear-peli{
+    padding: 12px;
+    background-color: #1e90ff; /* Color inicial para editar */
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 70px; /* Ancho mínimo para uniformidad */
+    text-align: center;
+    transition: background-color 0.3s;
+    height: 100%;
+    margin: 10px;
+    justify-content: left;
+}
+
+
+
+.w3-center{
+    color: #ffffff;
+}
+
+.formulario-pelicula {
+    max-width: 500px; 
+    color: white;
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: transparent;
+    border-radius: 10px; 
+    border-color: grey;
+    border-style: solid;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
+.w3-input
+{
+    background-color: #20232D;
+    color: #ffffff;
+}
+
+.formulario-pelicula {
+    
+    background-color: transparent; /* Fondo oscuro */
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 400px;
+    color: #ffffff; 
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.formulario-pelicula label {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.formulario-pelicula select,
+.formulario-pelicula input[type="date"],
+.formulario-pelicula input[type="time"] {
+    background-color: #20232D; /* Negro azulado */
+    border: 1px solid #706F76; /* Gris */
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
